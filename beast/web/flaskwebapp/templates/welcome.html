@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title> Transparent login Form Design </title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+    <body>
+    <div class="login-box">
+    <img src="/static/avatar.png" class="avatar">
+
+        <h1>Login Here</h1>
+        <form action="" method="POST">
+          <input type="text" placeholder="Username" name="username" value="{{
+            request.form.username }}">
+           <input type="password" placeholder="Password" name="password" value="{{
+            request.form.password }}">
+          <input class="btn btn-default" type="submit" value="Login">
+        </form>
+
+        </div>
+
+    </body>
+</html>

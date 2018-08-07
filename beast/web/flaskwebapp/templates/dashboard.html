@@ -1,0 +1,18 @@
+<html>
+ <head>
+   <title>Video Streaming </title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+ </head>
+ <body>
+   <h1> Live Video Streaming </h1>
+<img align=middle>
+   <img src="{{ url_for('video_feed') }}">
+
+   <form action="/dropsession" method="get">
+    <input type="submit" value="Logout"
+         name="Submit" id="frm1_submit" />
+         
+</form>
+
+ </body>
+</html>

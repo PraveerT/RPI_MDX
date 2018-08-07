@@ -1,0 +1,17 @@
+   <!DOCTYPE html>
+    <html>
+    <title>VLC Mozilla plugin test page</title>
+    <body>
+    <embed type="application/x-vlc-plugin" pluginspage="http://www.videolan.org"
+       width="320"
+       height="240"
+       target="rtsp://10.230.127.35:554/user=admin&password=admin&channel=1&stream=1.sdp?"
+       id="vlc" />
+    <script type="text/javascript">
+    <!--
+    var vlc = document.getElementById("vlc");
+vlc.audio.toggleMute();
+//-->
+</script>
+</body>
+</html>
